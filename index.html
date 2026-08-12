@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXTASIS — Bebidas Maceradas | Sabor, identidad y fiesta</title>
+    <meta
+      name="description"
+      content="Bebidas maceradas bolivianas con fruta real. Fresa con Ayrampo, Piña y Maracuyá — el alma de Bolivia en cada sorbo."
+    />
+    <meta name="theme-color" content="#0d0b04" />
+
+    <!-- TODO: replace REPLACE-ME with the live domain once it's chosen -->
+    <link rel="canonical" href="https://REPLACE-ME.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://REPLACE-ME.com/" />
+    <meta property="og:locale" content="es_BO" />
+    <meta property="og:site_name" content="EXTASIS Bebidas Maceradas" />
+    <meta property="og:title" content="EXTASIS — Bebidas Maceradas | Sabor, identidad y fiesta" />
+    <meta
+      property="og:description"
+      content="Bebidas maceradas bolivianas con fruta real. Fresa con Ayrampo, Piña y Maracuyá — el alma de Bolivia en cada sorbo."
+    />
+    <meta property="og:image" content="https://REPLACE-ME.com/img/bottle-lineup.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EXTASIS — Bebidas Maceradas | Sabor, identidad y fiesta" />
+    <meta
+      name="twitter:description"
+      content="Bebidas maceradas bolivianas con fruta real. Fresa con Ayrampo, Piña y Maracuyá — el alma de Bolivia en cada sorbo."
+    />
+    <meta name="twitter:image" content="https://REPLACE-ME.com/img/bottle-lineup.jpg" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="img/icon-512.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Icon sprite + shared paint servers. Hidden, referenced via <use href="#i-*">. -->
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <defs>
+        <pattern id="andean" x="0" y="0" width="40" height="24" patternUnits="userSpaceOnUse">
+          <polygon points="0,12 10,0 20,12 10,24" fill="#e8195e" opacity="0.9" />
+          <polygon points="20,12 30,0 40,12 30,24" fill="#f0a500" opacity="0.9" />
+          <rect x="0" y="11" width="40" height="2" fill="#1a1208" />
+        </pattern>
+      </defs>
+
+      <symbol id="i-menu" viewBox="0 0 24 24">
+        <line x1="3.5" y1="7" x2="20.5" y2="7" />
+        <line x1="3.5" y1="12" x2="20.5" y2="12" />
+        <line x1="3.5" y1="17" x2="20.5" y2="17" />
+      </symbol>
+
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <line x1="5" y1="5" x2="19" y2="19" />
+        <line x1="19" y1="5" x2="5" y2="19" />
+      </symbol>
+
+      <symbol id="i-instagram" viewBox="0 0 24 24">
+        <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+        <circle cx="12" cy="12" r="4.2" />
+        <circle cx="17.1" cy="6.9" r="0.6" fill="currentColor" stroke="none" />
+      </symbol>
+
+      <symbol id="i-tiktok" viewBox="0 0 24 24">
+        <path d="M14 3.5c.5 2.4 2.1 3.9 4.5 4.1v3c-1.7.05-3.2-.5-4.5-1.5v6.4a5.3 5.3 0 1 1-5.3-5.3c.35 0 .69.03 1 .1v3.1a2.2 2.2 0 1 0 1.6 2.1V3.5H14Z" />
+      </symbol>
+
+      <symbol id="i-arrow-right" viewBox="0 0 24 24">
+        <line x1="4" y1="12" x2="19" y2="12" />
+        <polyline points="13 6 19 12 13 18" />
+      </symbol>
+
+      <symbol id="i-fruit" viewBox="0 0 24 24">
+        <path d="M12 21c-4.4 0-7-3.4-7-7.4C5 9.7 8 6.8 9.6 5.6" />
+        <path d="M12 21c4.4 0 7-3.4 7-7.4 0-3.9-3-6.8-4.6-8" />
+        <path d="M12 21V9.5" />
+        <path d="M12 6.2c.7-1.4 2-2.4 3.6-2.7-.1 1.7-1.1 3.1-2.5 3.9" />
+      </symbol>
+
+      <symbol id="i-leaf" viewBox="0 0 24 24">
+        <path d="M5 19c0-7.5 5-13 14-13-.6 8.8-6 13-14 13Z" />
+        <path d="M5 19c2.5-3.8 5.6-6.6 10.5-9" />
+      </symbol>
+
+      <symbol id="i-diamond" viewBox="0 0 24 24">
+        <path d="M7 4h10l4 5.5L12 21 3 9.5 7 4Z" />
+        <path d="M3 9.5h18" />
+        <path d="M9.2 4 8 9.5l4 11.3 4-11.3L14.8 4" />
+      </symbol>
+
+      <symbol id="i-spirit" viewBox="0 0 24 24">
+        <path d="M12 3c1.2 2.6 3.4 3.7 6 4-2.6.3-4.8 1.4-6 4-1.2-2.6-3.4-3.7-6-4 2.6-.3 4.8-1.4 6-4Z" />
+        <path d="M5 16c.7 1.6 2 2.3 3.6 2.5-1.6.2-2.9.9-3.6 2.5-.7-1.6-2-2.3-3.6-2.5 1.6-.2 2.9-.9 3.6-2.5Z" />
+        <path d="M19 15c.5 1.1 1.4 1.6 2.5 1.7-1.1.1-2 .6-2.5 1.7-.5-1.1-1.4-1.6-2.5-1.7 1.1-.1 2-.6 2.5-1.7Z" />
+      </symbol>
+
+      <symbol id="i-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4.2" />
+        <line x1="12" y1="2.5" x2="12" y2="5.2" />
+        <line x1="12" y1="18.8" x2="12" y2="21.5" />
+        <line x1="2.5" y1="12" x2="5.2" y2="12" />
+        <line x1="18.8" y1="12" x2="21.5" y2="12" />
+        <line x1="5.1" y1="5.1" x2="7" y2="7" />
+        <line x1="17" y1="17" x2="18.9" y2="18.9" />
+        <line x1="18.9" y1="5.1" x2="17" y2="7" />
+        <line x1="7" y1="17" x2="5.1" y2="18.9" />
+      </symbol>
+
+      <symbol id="i-heart" viewBox="0 0 24 24">
+        <path d="M12 20s-7.5-4.6-9.8-9.4C.8 7.2 2.4 4 5.8 3.6c2-.2 3.5.8 4.9 2.6 1.4-1.8 2.9-2.8 4.9-2.6 3.4.4 5 3.6 3.6 7C19.5 15.4 12 20 12 20Z" />
+      </symbol>
+
+      <symbol id="i-mountain" viewBox="0 0 24 24">
+        <path d="M2.5 19 9 8l3.2 5.2L14.5 10l7 9Z" />
+        <circle cx="16.5" cy="6" r="1.6" />
+      </symbol>
+
+      <symbol id="i-people" viewBox="0 0 24 24">
+        <circle cx="9" cy="8" r="3.2" />
+        <path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6" />
+        <circle cx="17" cy="9" r="2.4" />
+        <path d="M15.5 14c2.6.3 4.5 2.3 4.5 5" />
+      </symbol>
+    </svg>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio" class="nav__logo">
+        <img src="img/logo-white.png" width="400" height="85" alt="Extasis — Bebidas Maceradas" />
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="#inicio" class="nav__link nav__link--active" data-nav-link>INICIO</a></li>
+        <li><a href="#sabores" class="nav__link" data-nav-link>PRODUCTOS</a></li>
+        <li><a href="#esencia" class="nav__link" data-nav-link>NUESTRA ESENCIA</a></li>
+        <li><a href="#nosotros" class="nav__link" data-nav-link>NOSOTROS</a></li>
+        <li><a href="#contacto" class="nav__link" data-nav-link>CONTACTO</a></li>
+      </ul>
+
+      <div class="nav__cta-wrap">
+        <a href="https://www.instagram.com/extasis.bol/" target="_blank" rel="noopener noreferrer" class="nav__cta">
+          SÍGUENOS
+          <span class="nav__cta-icons">
+            <svg class="icon" width="15" height="15"><use href="#i-instagram" /></svg>
+            <svg class="icon" width="15" height="15"><use href="#i-tiktok" /></svg>
+          </span>
+        </a>
+      </div>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile-menu">
+        <svg class="icon nav__toggle-icon nav__toggle-icon--open" width="26" height="26"><use href="#i-menu" /></svg>
+        <svg class="icon nav__toggle-icon nav__toggle-icon--close" width="26" height="26"><use href="#i-close" /></svg>
+      </button>
+
+      <div class="nav__mobile-menu" id="nav-mobile-menu">
+        <a href="#inicio" class="nav__mobile-link" data-nav-link data-close-menu>INICIO</a>
+        <a href="#sabores" class="nav__mobile-link" data-nav-link data-close-menu>PRODUCTOS</a>
+        <a href="#esencia" class="nav__mobile-link" data-nav-link data-close-menu>NUESTRA ESENCIA</a>
+        <a href="#nosotros" class="nav__mobile-link" data-nav-link data-close-menu>NOSOTROS</a>
+        <a href="#contacto" class="nav__mobile-link" data-nav-link data-close-menu>CONTACTO</a>
+        <a
+          href="https://www.instagram.com/extasis.bol/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav__mobile-cta"
+        >
+          SÍGUENOS
+          <span class="nav__cta-icons">
+            <svg class="icon" width="15" height="15"><use href="#i-instagram" /></svg>
+            <svg class="icon" width="15" height="15"><use href="#i-tiktok" /></svg>
+          </span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero__wrap">
+          <div class="hero__glow" aria-hidden="true"></div>
+
+          <div class="hero__inner">
+            <div class="hero__copy">
+              <h1 class="hero__title">
+                <span class="hero__title-line">Sabor, identidad</span>
+                <span class="hero__title-line hero__title-line--accent">y fiesta</span>
+                <span class="hero__title-line">en una botella</span>
+              </h1>
+
+              <p class="hero__lede">Bebidas maceradas con fruta real,<br />el alma de Bolivia en cada sorbo.</p>
+
+              <a href="#sabores" class="btn btn--gradient hero__cta">
+                DESCUBRE NUESTROS SABORES
+                <svg class="icon" width="16" height="16"><use href="#i-arrow-right" /></svg>
+              </a>
+
+              <p class="hero__disclaimer">Bebida alcohólica · Solo para mayores de 18 años</p>
+            </div>
+
+            <div class="hero__art">
+              <div class="hero__bottle-frame">
+                <img
+                  src="img/bottle-lineup.jpg"
+                  width="880"
+                  height="821"
+                  alt="Botellas Extasis: Maracuyá, Fresa con Ayrampo y Piña"
+                  class="hero__bottle-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="features-strip">
+          <div class="features-strip__item">
+            <svg class="icon features-strip__icon" width="26" height="26"><use href="#i-fruit" /></svg>
+            <div>
+              <p class="features-strip__title">Fruta real</p>
+              <p class="features-strip__sub">Directo del productor</p>
+            </div>
+          </div>
+          <div class="features-strip__item">
+            <svg class="icon features-strip__icon" width="26" height="26"><use href="#i-leaf" /></svg>
+            <div>
+              <p class="features-strip__title">Proceso artesanal</p>
+              <p class="features-strip__sub">Maceración que realza el sabor</p>
+            </div>
+          </div>
+          <div class="features-strip__item">
+            <svg class="icon features-strip__icon" width="26" height="26"><use href="#i-diamond" /></svg>
+            <div>
+              <p class="features-strip__title">Experiencia única</p>
+              <p class="features-strip__sub">Tradición + modernidad</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="andean-border" aria-hidden="true">
+        <svg width="100%" height="24" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="24" fill="url(#andean)" /></svg>
+      </div>
+
+      <section id="sabores" class="sabores">
+        <div class="sabores__head">
+          <h2 class="sabores__title">Nuestros <span class="sabores__title-accent">Sabores</span></h2>
+          <p class="sabores__sub">Una experiencia única en cada botella.</p>
+        </div>
+
+        <div class="sabores__grid">
+          <article class="flavor-card" style="--ring: #e8195e">
+            <div class="flavor-card__photo">
+              <img
+                src="img/bottle-fresa.jpg"
+                width="506"
+                height="478"
+                loading="lazy"
+                alt="Fresa con Ayrampo"
+                style="object-position: 50% 30%"
+              />
+            </div>
+            <span class="flavor-card__name">Fresa con Ayrampo</span>
+            <p class="flavor-card__subtitle">El encuentro del placer y la raíz</p>
+            <p class="flavor-card__desc">
+              Una fusión que une lo ancestral con lo moderno. La intensidad de la fresa y la esencia sagrada del
+              ayrampo se mezclan para crear un sabor que rompe esquemas.
+            </p>
+            <div class="flavor-card__tags">
+              <div class="flavor-card__tag">
+                <span class="flavor-card__tag-icon"><svg class="icon" width="17" height="17"><use href="#i-fruit" /></svg></span>
+                <span class="flavor-card__tag-label">Fruta real</span>
+              </div>
+              <div class="flavor-card__tag">
+                <span class="flavor-card__tag-icon"><svg class="icon" width="17" height="17"><use href="#i-heart" /></svg></span>
+                <span class="flavor-card__tag-label">Sabor auténtico</span>
+              </div>
+              <div class="flavor-card__tag">
+                <span class="flavor-card__tag-icon"><svg class="icon" width="17" height="17"><use href="#i-mountain" /></svg></span>
+                <span class="flavor-card__tag-label">Esencia boliviana</span>
+              </div>
+            </div>
+            <div class="flavor-card__footer">
+              <span class="flavor-card__pill">El sabor del éxito</span>
+              <span class="flavor-card__meta">750 ML · 10% ALC. VOL</span>
+            </div>
+          </article>
+
+          <article class="flavor-card" style="--ring: #f0a500">
+            <div class="flavor-card__photo">
+              <img
+                src="img/bottle-pina.jpg"
+                width="373"
+                height="520"
+                loading="lazy"
+                alt="Piña"
+                style="object-position: 50% 42%"
+              />
+            </div>
+            <span class="flavor-card__name">Piña</span>
+            <p class="flavor-card__subtitle">La frescura que enamora</p>
+            <p class="flavor-card__desc">
+              Un sabor tropical, dulce y equilibrado que captura la esencia de los valles bolivianos, macerado con
+              pasión para una experiencia refrescante.
+            </p>
+            <div class="flavor-card__tags">
+              <div class="flavor-card__tag">
+                <span class="flavor-card__tag-icon"><svg class="icon" width="17" height="17"><use href="#i-fruit" /></svg></span>
+                <span class="flavor-card__tag-label">Fruta real</span>
+              </div>
+              <div class="flavor-card__tag">
+                <span class="flavor-card__tag-icon"><svg class="icon" width="17" height="17"><use href="#i-sun" /></svg></span>
+                <span class="flavor-card__tag-label">Frescura tropical</span>
+              </div>
+              <div class="flavor-card__tag">
+                <span class="flavor-card__tag-icon"><svg class="icon" width="17" height="17"><use href="#i-mountain" /></svg></span>
+                <span class="flavor-card__tag-label">Energía natural</span>
+              </div>
+            </div>
+            <div class="flavor-card__footer">
+              <span class="flavor-card__pill">Sabor que conecta</span>
+              <span class="flavor-card__meta">750 ML · 12% ALC. VOL</span>
+            </div>
+          </article>
+
+          <article class="flavor-card" style="--ring: #9b3fc8">
+            <div class="flavor-card__photo">
+              <img
+                src="img/bottle-maracuya.jpg"
+                width="702"
+                height="960"
+                loading="lazy"
+                alt="Maracuyá"
+                style="object-position: 50% 42%"
+              />
+            </div>
+            <span class="flavor-card__name">Maracuyá</span>
+            <p class="flavor-card__subtitle">El deseo que despierta los sentidos</p>
+            <p class="flavor-card__desc">
+              El aroma intenso y sabor vibrante del maracuyá invita a vivir una experiencia fresca y audaz. Una
+              bebida que enciende los sentidos.
+            </p>
+            <div class="flavor-card__tags">
+              <div class="flavor-card__tag">
+                <span class="flavor-card__tag-icon"><svg class="icon" width="17" height="17"><use href="#i-fruit" /></svg></span>
+                <span class="flavor-card__tag-label">Fruta real</span>
+              </div>
+              <div class="flavor-card__tag">
+                <span class="flavor-card__tag-icon"><svg class="icon" width="17" height="17"><use href="#i-sun" /></svg></span>
+                <span class="flavor-card__tag-label">Sabor intenso</span>
+              </div>
+              <div class="flavor-card__tag">
+                <span class="flavor-card__tag-icon"><svg class="icon" width="17" height="17"><use href="#i-heart" /></svg></span>
+                <span class="flavor-card__tag-label">Pasión líquida</span>
+              </div>
+            </div>
+            <div class="flavor-card__footer">
+              <span class="flavor-card__pill">Atrévete a sentir</span>
+              <span class="flavor-card__meta">750 ML · 12% ALC. VOL</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="andean-border andean-border--flip" aria-hidden="true">
+        <svg width="100%" height="24" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="24" fill="url(#andean)" /></svg>
+      </div>
+
+      <section id="esencia" class="esencia">
+        <div class="esencia__grid">
+          <div class="esencia__photo">
+            <img
+              src="img/bottle-fresa.jpg"
+              width="506"
+              height="478"
+              loading="lazy"
+              alt="Botella Extasis Fresa con Ayrampo"
+              style="object-position: 50% 20%"
+            />
+          </div>
+
+          <div>
+            <h2 class="esencia__title">Más que una bebida, <span class="esencia__title-accent">una experiencia</span></h2>
+            <p class="esencia__desc">
+              EXTASIS nace para conectar, celebrar y compartir lo mejor de nuestra tierra, con un toque moderno que
+              hace cada momento inolvidable.
+            </p>
+
+            <div class="esencia__pillars">
+              <div class="esencia__pillar">
+                <span class="esencia__pillar-icon"><svg class="icon" width="16" height="16"><use href="#i-people" /></svg></span>
+                <span class="esencia__pillar-text">Perfecta para tus mejores momentos</span>
+              </div>
+              <div class="esencia__pillar">
+                <span class="esencia__pillar-icon"><svg class="icon" width="16" height="16"><use href="#i-diamond" /></svg></span>
+                <span class="esencia__pillar-text">Calidad y sabor que marcan la diferencia</span>
+              </div>
+              <div class="esencia__pillar">
+                <span class="esencia__pillar-icon"><svg class="icon" width="16" height="16"><use href="#i-leaf" /></svg></span>
+                <span class="esencia__pillar-text">Comprometidos con un futuro más consciente</span>
+              </div>
+            </div>
+
+            <div class="esencia__soon">
+              <p class="esencia__soon-title">Próximamente</p>
+              <p class="esencia__soon-text">
+                Nuevos sabores para seguir creando momentos únicos, y una línea sin alcohol: el mismo sabor real, la
+                misma identidad, una nueva forma de disfrutar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="nosotros" class="nosotros">
+        <img src="img/leaves.png" width="362" height="384" alt="" aria-hidden="true" loading="lazy" class="nosotros__leaf nosotros__leaf--top" />
+        <img src="img/leaves.png" width="362" height="384" alt="" aria-hidden="true" loading="lazy" class="nosotros__leaf nosotros__leaf--bottom" />
+
+        <div class="nosotros__grid">
+          <div>
+            <h2 class="nosotros__title">Bolivia en cada <span class="nosotros__title-accent">sorbo</span></h2>
+            <p class="nosotros__desc">
+              EXTASIS nació de un sueño: crear una marca boliviana que celebre lo nuestro, transforme lo cotidiano en
+              algo extraordinario y conecte a las personas a través del sabor, la cultura y la alegría. Todo comenzó
+              con una pasión por la fruta boliviana y las tradiciones que nos identifican. En 2024 dimos vida a
+              EXTASIS Bebidas Maceradas, una propuesta que une lo artesanal con lo moderno, lo local con lo festivo.
+            </p>
+
+            <div class="nosotros__pillars">
+              <div class="nosotros__pillar">
+                <span class="nosotros__pillar-icon"><svg class="icon" width="19" height="19"><use href="#i-fruit" /></svg></span>
+                <p class="nosotros__pillar-title">Fruta real</p>
+                <p class="nosotros__pillar-sub">Sabores auténticos de nuestra tierra.</p>
+              </div>
+              <div class="nosotros__pillar">
+                <span class="nosotros__pillar-icon"><svg class="icon" width="19" height="19"><use href="#i-mountain" /></svg></span>
+                <p class="nosotros__pillar-title">Identidad boliviana</p>
+                <p class="nosotros__pillar-sub">Una marca que celebra nuestras raíces.</p>
+              </div>
+              <div class="nosotros__pillar">
+                <span class="nosotros__pillar-icon"><svg class="icon" width="19" height="19"><use href="#i-spirit" /></svg></span>
+                <p class="nosotros__pillar-title">Espíritu festivo</p>
+                <p class="nosotros__pillar-sub">Momentos que se disfrutan más.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="nosotros__photo">
+            <img
+              src="img/bottle-maracuya.jpg"
+              width="702"
+              height="960"
+              loading="lazy"
+              alt="Botella Extasis Maracuyá"
+              style="object-position: 50% 40%"
+            />
+            <div class="nosotros__photo-gradient" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contacto">
+        <div class="andean-border" aria-hidden="true">
+          <svg width="100%" height="24" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="24" fill="url(#andean)" /></svg>
+        </div>
+
+        <div class="contacto__inner">
+          <img src="img/slogan-white.png" width="720" height="120" alt="Un viaje en tus labios" loading="lazy" class="contacto__slogan" />
+
+          <h2 class="contacto__title">¡Sé parte de la experiencia <span class="contacto__title-accent">EXTASIS</span>!</h2>
+
+          <p class="contacto__sub">
+            Escríbenos por redes sociales para conocer puntos de venta, eventos y las últimas novedades.
+          </p>
+
+          <div class="contacto__socials">
+            <a
+              href="https://www.instagram.com/extasis.bol/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Extasis en Instagram"
+              class="contacto__social"
+            >
+              <svg class="icon" width="20" height="20"><use href="#i-instagram" /></svg>
+            </a>
+            <a
+              href="https://www.tiktok.com/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Extasis en TikTok"
+              class="contacto__social"
+            >
+              <svg class="icon" width="20" height="20"><use href="#i-tiktok" /></svg>
+            </a>
+          </div>
+
+          <p class="contacto__tagline">Sabor · Identidad · Fiesta</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__top">
+        <img src="img/logo-white.png" width="400" height="85" loading="lazy" alt="Extasis — Bebidas Maceradas" class="site-footer__logo" />
+
+        <div class="site-footer__socials">
+          <a href="https://www.instagram.com/extasis.bol/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="site-footer__social">
+            <svg class="icon" width="18" height="18"><use href="#i-instagram" /></svg>
+          </a>
+          <a href="https://www.tiktok.com/en/" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="site-footer__social">
+            <svg class="icon" width="18" height="18"><use href="#i-tiktok" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© 2024 Extasis Bebidas Maceradas — Bolivia</p>
+        <p class="site-footer__disclaimer">
+          El consumo excesivo de alcohol es dañino para la salud. Venta prohibida a menores de 18 años.
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
